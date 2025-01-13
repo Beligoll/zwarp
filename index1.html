@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Control de Inventario de Productos</h1>
+        
+        <!-- Botón de Salir de Sesión -->
+        <button id="logoutButton" onclick="logout()" class="logout-button">Salir de sesión</button>
+        
+        <form id="productForm">
+            <input type="text" id="nombre" placeholder="Nombre del Producto" required>
+            <input type="text" id="lote" placeholder="Número de Lote" required>
+            <input type="date" id="fecha_vencimiento" required>
+            <select id="estado" required>
+                <option value="">Seleccionar Estado</option>
+                <option value="Disponible">Disponible</option>
+                <option value="Agotado">Agotado</option>
+            </select>
+            <button type="submit">Agregar Producto</button>
+        </form>
+
+        <input type="text" id="search" placeholder="Buscar producto..." oninput="searchProducts()">
+
+        <button id="resetButton" onclick="resetData()">Restablecer Datos</button>
+        <br>
+        <br>
+        <label class="filter-expiring">
+            <h5>Mostrar productos cercanos a vencer</h5>
+            <input type="checkbox" id="filterExpiring" onchange="filterExpiringProducts()">
+        </label>
+        
+        <h2>Productos Registrados</h2>
+        <div id="productGrid" class="product-grid">
+            <!-- Los productos se agregarán aquí -->
+        </div>
+
+        <div id="notification" class="notification hidden"></div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

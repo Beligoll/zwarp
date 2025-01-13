@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Yo12wWUeC8X1h7YlNv0oBv6f9/V5WtM2PAE9mRiFQwF6f3QJnI6HscfrF3YhQ7PwChDL8AJ+ScGdgLZcQuZmCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="flip-card" id="flipCard">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <form id="loginForm">
+                    <h1 style="color: black; text-align: center;">Login</h1>
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div style="position: relative;">
+                        <input type="checkbox" id="rememberPassword">
+                        <label for="rememberPassword">Remember Password</label>
+                        <div class="password-toggle" onclick="togglePasswordVisibility()" style="cursor: pointer;">
+                            <i class="far fa-eye" id="togglePassword"></i>
+                        </div>
+                    </div>
+                    <button type="submit">Log In</button>
+                </form>
+                <div id="message" style="color: red; text-align: center;"></div> <!-- Mensaje de error/success -->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

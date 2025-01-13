@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../gestor-productos"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SAQ"
+	}
+}

@@ -1,0 +1,119 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ff9ef5; /* Azul */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff51ff; /* Azul más oscuro */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+    margin: 0 0 10px;
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+.product-card button {
+    background-color: #40ce61; /* Verde para editar */
+}
+
+.notification {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eeff00;
+    color: #333;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+.filter-expiring {
+    display: flex;
+    align-items:normal;
+    gap: 10px; /* Espacio entre el texto y el checkbox */
+    font-family: Arial, sans-serif; /* Fuente más estilizada */
+    }
+    
+    .filter-expiring h5 {
+    margin: 0;
+    font-size: 20px;
+    }
+    
+    .filter-expiring input[type="checkbox"] {
+    transform: scale(1.2); /* Aumenta el tamaño del checkbox */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    }
+    .logout-button {
+        position: absolute; /* Posicionamiento absoluto */
+        top: 20px; /* Distancia desde la parte superior */
+        right: 20px; /* Distancia desde la derecha */
+        background-color: #dc3545; /* Color de fondo (rojo) */
+        color: white; /* Color del texto */
+        border: none; /* Sin borde */
+        padding: 10px 15px; /* Espaciado interno */
+        cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+        border-radius: 5px; /* Bordes redondeados */
+        transition: background-color 0.3s; /* Transición suave */
+    }
+    
+    .logout-button:hover {
+        background-color: #c82333; /* Color al pasar el mouse */
+    }
+    
